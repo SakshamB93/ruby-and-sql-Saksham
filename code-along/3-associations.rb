@@ -9,7 +9,7 @@ Contact.destroy_all
 # **************************
 
 puts "Companies: #{Company.all.count}"
-puts "Contacts: #{Contact.all.count}"
+
 
 
 # - Insert and read contact data for companies in the database
@@ -34,6 +34,7 @@ contact2["email"] = "saksham@amazon.com"
 contact2["company_id"] = amazon["id"]
 contact2.save
 
+puts "Contacts: #{Contact.all.count}"
 
 # 2. How many contacts work at Apple?
 
